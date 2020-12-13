@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixa Eletrônico</title>
+    <link rel="stylesheet" href="exe04.css">
+</head>
+<body>
+
+    <section class="estrutura">
+        <h1>Caixa Eletrônico</h1>
+    <section class="tela">
+        
+    <div class="opcao">
+        <input type="button" value="Deposito" onclick="deposito()">
+        <input type="button" value="Saque" onclick="saque()">
+        <input type="button" value="Consultar Saldo" onclick="consultarsaldo()">
+    </div>
+
+    <div class="depositar">
+        <input type="number" placeholder="Valor a depositar" class="dep" min="0" autocomplete="off" >
+        <input type="button" value="Depositar" onclick="fdep()">
+        <input type="button" value="voltar" onclick="voltardep()">
+        <p class="testesaldo">doposito de ' ' realizado com sucesso <br> saldo atual:' ' </p>
+    </div>
+
+    <div class="sacar">
+        <input type="number" placeholder="Valor a sacar" class="saq" autocomplete="off" min="0">
+        <input type="button" value="Sacar" onclick="fsaq()">
+        <input type="button" value="voltar" onclick="voltarsaque()">
+        <p class="msgsaque"> saque de ' ' realizado com sucesso <br> saldo atual:' '</p>
+    </div> 
+
+<div class="consultar-saldo">
+
+    <div class="esconder-consulta">
+        <p class="seusaldo">Seu saldo atual é de ' '</p>
+        <input type="button" value="Imprimir recibo" onclick="imprimir()">
+        <input type="button" value="voltar" onclick="voltarsaldo()">
+    </div>
+
+        <div class="recibo">
+            <h4>Caixa Econômica</h4>
+            <p>Número da conta: 013</p>
+            <p>Usuário: Jordisnei irineu</p>
+            <p class="data">data: 32/13/2021</p>
+            <p class="ultimodep">Último depósito:</p>
+            <p class="ultimosaq">Último saque:</p>
+            <p class="saldoatual">Saldo atual:</p>
+        </div>
+
+ </div>
+
+    
+
+    </section><!--Tela-->
+
+  
+</section><!--estrutura-->
+
+<section class="base">
+    <div class="boca">
+        <div class="tampa"> </div>
+        <img src="/img/nota-dolar.png" class="dinheiro1">
+        <img src="/img/nota-dolar.png" class="dinheiro2" style="margin-left: 10px;">
+        <img src="/img/nota-dolar.png" class="dinheiro3" style="margin-left: 20px;">
+    </div>
+</section>
+    
+
+    <script src="exe04.js"> </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="exe03.css">
+    <meta http-equiv="refresh" content="">
+    <title>Bar suvaco $eco</title>
+</head>
+<body onload="myFunction()">
+
+    <section class="cardapio">
+        <h1>Cardápio Suvaco Seco</h1><br>
+        <div class="pedidos">
+            <p>Cacetinho assado --------------- 5,00 R$ <input type="number" id="p1" min="0" onclick="vrau()"></p>
+            <p>Suco de bergamota ------------- 3,00 R$ <input type="number" id="p2" min="0" onclick="vrau()"></p>
+            <p>Coxinha 400g --------------------- 4,00 R$ <input type="number" id="p3" min="0" onclick="vrau()"></p>
+            <p>Espetinho de frango ----------- 3,00 R$ <input type="number" id="p4" min="0" onclick="vrau()"></p>
+            <p>Espetinho de coração --------- 3,00 R$ <input type="number" id="p5" min="0" onclick="vrau()"></p>
+
+        </div>
+
+        <div class="conta">
+            <p class="valor-conta" style="text-align: center;"> </p>
+
+        </div>
+
+        <div class="pagamento-cartao">
+          
+                <input type="radio" name="pagamento" id="debito" checked>
+                <label for="debito">Cartão de Débito </label>
+                <br>
+                <input type="radio" name="pagamento" id="credito">
+                <label for="credito">Cartão de Crédito (acrescimo de 1%) <span class="valor-conta"> </span></label>
+
+        </div>
+        <br>
+        <input type="button" value="Finalizar pedido" onclick="finalizar()">
+    </section> <!--cardapio-->
+
+    <section class="nota-fiscal" style="display: none;">
+        <p style="text-align: center;">--------------------------------------------- Nota fiscal -------------------------------------------</p>
+        <p>Tipo de Estabelecimento: Bar ------------------------------------------------------------------</p>
+        <p>Nome do Estabelecimento: Suvaco seco ------------------------------------------------------</p>
+        <p>Endereço do Estabelecimento: Rua: Gonzales Rakin - n°31 -------------------------------</p>
+        <p>CNPJ: 2545486-654 -----------------------------------------------------------------------------</p>
+        <p id="valor-fiscal"> </p>
+    </section>
+
+    <script src="exe03.js"> </script>
+</body>
+</html>

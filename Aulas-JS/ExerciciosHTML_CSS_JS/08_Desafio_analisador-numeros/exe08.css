@@ -1,0 +1,52 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0px;
+}
+body{
+    margin: 0 auto;
+    background-color: rgb(106, 131, 156);
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+h1{
+    text-align: center;
+    margin-top: 100px;
+}
+.divmaster{
+    max-width: 500px;
+    min-height: 100px;
+    background-color: lightcoral;
+    margin: 30px auto;
+    border-radius: 20px;
+    box-shadow: black 3px 3px 5px;
+    padding: 10px;
+    font-size: 15px;
+
+}
+select{
+    margin-top: 15px;
+    width: 150px;
+}
+
+.resultado{
+    max-width: 500px;
+    min-height: 100px;
+    min-width: 100px;
+    background-color: rgb(180, 135, 135);
+    margin: 30px auto;
+    border-radius: 20px;
+    box-shadow: black 3px 3px 5px;
+    padding: 10px;
+    font-size: 15px;
+    display: none;
+    margin-left: 50%;
+    transform: translate(-50%);
+    
+}
+.resultado h3{
+    text-align: center;
+}
+footer{
+    text-align: center;
+}

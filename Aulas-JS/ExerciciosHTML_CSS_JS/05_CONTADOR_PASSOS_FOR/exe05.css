@@ -1,0 +1,26 @@
+body{
+    background-color: lightslategray;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+h1{
+    text-align: center;
+    
+}
+section{
+    margin: 20px auto;
+    background-color: rgb(183, 241, 222);
+    width: 500px;
+    min-height: 400px;
+    border-radius: 20px;
+    padding: 10px;
+}
+section p{
+    display: flex;
+    margin-bottom: 40px;
+}
+footer{
+    text-align: center;
+    font-size: 22px;
+}

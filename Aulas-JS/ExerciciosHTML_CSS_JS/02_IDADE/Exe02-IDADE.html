@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 2</title>
+
+    <style>
+        body{
+            background-color: cadetblue;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        section{
+            background-color: rgb(228, 217, 217);
+            width: 50%;
+            min-width: 550px;
+            border-radius: 20px;
+            padding: 15px;
+            color: black;
+            margin: 0 auto;
+        }
+        section div{
+            text-align: left;
+            margin-top: 20px;
+        }
+        input[type="button"]{
+            margin-top: 20px;
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+        .msg{
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .imagem{
+            margin-left: 50%;
+            transform: translate(-50%);
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <h1>Verificador de idade</h1>
+    <section>
+        <div class="divmaster">
+            <div>
+            <span>Ano de nascimento:</span>
+            <input type="number" class="ano" min="0" max="2020">
+            </div>
+
+            <div>
+            <span>Sexo:</span>
+            <input type="radio" name="sexo" id="marc">
+            <label for="masc">Masculino</label>
+           
+            <input type="radio" name="sexo" id="fem">
+            <label for="fem">Feminino</label>
+            </div>
+
+            <input type="button" value="Verificar" class="botao" onclick="verificar()">
+
+            <p class="msg">Preencha os dados acima</p>
+
+            <img class="imagem">
+
+        </div>
+    </section><br>
+    <footer>@NerdFullStack</footer>
+
+    <script>
+       function verificar(){
+
+        let dataAtual = new Date()
+        let hoje = dataAtual.getFullYear()
+
+        let ano = document.querySelector("input.ano")
+
+        let ano2 = Number(ano.value)
+
+        let idade = hoje - ano2
+       
+        let sexo = document.getElementsByName("sexo")
+
+        let msg = document.querySelector("p.msg")
+
+        let imagem = document.querySelector("img.imagem")
+
+        if(idade<0){
+        alert("Data inválida")
+        }else if(sexo[0].checked){ //se o input(sexo) [0](primeiro) estiver marcado faça isso...
+            msg.innerHTML = `Você é um homem com ${idade} anos!`
+            if(idade <= 12){
+                imagem.src="/img/menino.png"
+            }else if(idade > 12 & idade < 21){
+                imagem.src = "/img/jovem-h.png"
+            }else if(idade >= 21 & idade <= 35){
+                imagem.src="/img/homem.png"
+            }else if(idade > 35 & idade <= 55){
+                imagem.src= "/img/adulto.png"
+            }else if(idade > 55){
+                imagem.src = "/img/idoso.png"
+            }
+
+        }else if(sexo[1].checked){
+            msg.innerHTML = `Você é uma mulher com ${idade} anos!`
+            if(idade <= 12){
+                imagem.src="/img/menina.png"
+            }else if(idade > 12 & idade < 21){
+                imagem.src = "/img/jovem-m.png"
+            }else if(idade >= 21 & idade <= 35){
+                imagem.src="/img/mulher.png"
+            }else if(idade > 35 & idade <= 55){
+                imagem.src= "/img/adulta.png"
+            }else if(idade > 55){
+                imagem.src = "/img/idosa.png"
+            }
+        }
+
+        }//function
+
+    </script>
+    
+</body>
+</html>

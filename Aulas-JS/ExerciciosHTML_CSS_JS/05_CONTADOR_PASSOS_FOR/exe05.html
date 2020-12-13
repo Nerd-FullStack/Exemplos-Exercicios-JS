@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de passos</title>
+    <link rel="stylesheet" href="exe05.css">
+</head>
+<body >
+ <h1>Contador de Passos</h1>
+
+    <section>
+
+     <div class="inicio">
+        <p>Início: <input type="number" min="0" class="inicio"></p>
+                
+        <p>Fim: <input type="number" min="1" class="fim"></p>
+
+        <p>Pulo: <input type="number" min="1" class="pulo"></p>
+
+        <input type="button" value="Contar" onclick="contar()">
+            <br><br>
+        <p class="msg">Preparando a contagem...</p>
+
+     </div>
+
+        <div class="resultado" onload="carregar()">
+            
+        </div>
+
+    </section>
+
+        <footer>@NerdFullStack</footer>
+
+
+
+
+
+    <script src="exe05.js"> </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+body{
+    background-color: rgb(94, 69, 146);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-weight: bold;
+}
+h1{
+    text-align: center;
+}
+section{
+    color: black;
+    width: 500px;
+    background-color: mistyrose;
+    padding: 20px;
+    margin: 0 auto;
+    border-radius: 30px;
+}
+.dados{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.resultado{
+    width: 200px;
+    height: 193px;
+    border: 2px solid gray;
+    margin-right: 50px;
+}
+.resultados{
+    display: flex;
+}

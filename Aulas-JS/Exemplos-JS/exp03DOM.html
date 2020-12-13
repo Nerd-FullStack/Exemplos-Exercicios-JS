@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinando DOM</title>
+    <style>
+        body{
+            background-color: rgb(29, 116, 119);
+            font-size: 20px;
+            color: lightgray;
+            font-family: arial;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="tit">Iniciando treinamento com DOM</h1>
+    <p>Vamos começar nosso treinamento com <b>DOM</b>!!</p>
+    <p>Vamos ficar <i>fera</i>!!</p>
+    <div id="msg">Clique aqui!</div>
+
+    <script>
+        //getElementsBytagname('p/div/h1/...')[0/1/2/...] -> pega pela tag
+        //[0/1/2/...] -> é o num da tag(p/h1/span/...) [0] é a primeira [1] é a segunda ...
+        //getElementsByClassName('class da tag')[0/1/...] -> pega pela class da tag
+        //getElementById('id da tag') -> pega pelo id da tag
+        //getElementByName(name da tag) -> pega a tag pelo name (igual o id e class)
+        //getElementsByTagNameNS
+        //querySelector('div#msg') -> pegue a div que tem o id/class 'msg' (# para id) (. para class)
+
+        var corpo = document.body //significa -> o body do meu site vai virar uma variavel
+        corpo.style.backgroundColor = 'black'
+
+        var par = document.getElementsByTagName('p')[0]
+        par.style.color='blue'
+        document.write("está escrito: "+par.innerHTML) 
+        //innerText -> pegue o texto que esta dentro do pararafo.
+        //innerHTML -> mais recomendado pq ele pega o texto formatado
+
+        var clique = document.getElementById('msg')
+        clique.style.color = "lightgreen"
+
+        var titulo = document.getElementsByClassName('tit')[0]
+        titulo.style.backgroundColor = "red"
+       
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            background-color: cadetblue;
+        }
+        div{
+           background-color: aquamarine; 
+           font-size: 30px;
+           width: 150px;
+           height: 150px;
+           margin-top: 150px;
+           margin-left: 200px;
+           text-align: center;
+           cursor: pointer;        
+            }
+    </style>
+</head>
+<body>
+    <div class="interacao" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+        Interaja...        
+    </div>
+    <!-- onclick ="nome da ação()" -> quando clicar
+         onmouseenter ="nome da ação()" -> quando o mouse estiver dentro do elemento
+         onmouseout ="nome da ação()" -> quando o mouse sair de dentro do elemento
+
+    ou se quiser usar outro método, tem exemplos do addEventListener abaixo:
+    nomevariavel.addEventListener("tipo da açao click/onmouseenter/onmouseout/...", nome da açao clicar/entrar/sair/...)
+     -->
+    <script>
+        var acao = window.document.getElementsByClassName('interacao')[0]
+        //acao.addEventListener("click", clicar)     OBs: click=onclick
+        //acao.addEventListener("mouseenter", entrar)
+        //acao.addEventListener("mouseout", sair)
+        function clicar(){
+            acao.innerText = 'clicou'
+            acao.style.backgroundColor = "purple"
+        }
+
+        function entrar(){
+            acao.innerText = "Entrou"
+        }
+        function sair(){
+            acao.innerHTML = "Saiu"
+            acao.style.backgroundColor = "aquamarine"
+        }
+
+    </script>
+</body>
+</html>

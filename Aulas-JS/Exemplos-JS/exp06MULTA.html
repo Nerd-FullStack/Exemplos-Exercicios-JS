@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRAN</title>
+
+    <style>
+        body{
+            margin: 70px;
+        }
+        input{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h2>Coloque sua velocidade e clique em "Verificar"</h2>
+    <input type="number" name="txtvelo" class="velo">
+    <input type="button" name="botao" value="Verificar" class="verificar" onclick="verificar()">
+    <br><br>
+    <div class="resultado">Analisando...</div>
+
+    <script>
+
+        function verificar(){
+        let vel = window.document.querySelector("input.velo")
+        let res = window.document.querySelector("div.resultado")
+        vel = Number(vel.value)
+        
+            if(vel <= 60){
+                res.innerHTML=`${vel}Km/h Show de bola`
+            }else{
+                if((vel > 60)&(vel <= 100)){
+                    res.innerHTML = `${vel}Km/h, VOCÊ FOI MULTADO!!!`
+                }else{
+                    res.innerHTML = `${vel}Km/h, VOCÊ TÁ LOUCOO!!!`
+                }
+            }
+
+        }
+        
+       
+
+    </script>
+
+</body>
+</html>

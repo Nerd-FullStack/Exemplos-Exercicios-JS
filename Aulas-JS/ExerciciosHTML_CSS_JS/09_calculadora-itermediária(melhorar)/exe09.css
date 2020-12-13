@@ -1,0 +1,35 @@
+body{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+section{
+    background-color: indianred;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 30px;
+}
+input[type=number]{
+    width: 50px;
+    padding: 10px;
+    display: flex;
+    margin: 10px auto;
+}
+input[type=button]{
+    cursor: pointer;
+    padding: 5px 18px;
+    font-size: 20px;
+    min-width: 48px;
+    max-width: 45px;
+    
+}
+input.limpar{
+    min-width: 96px;
+    
+}
+.resultado{
+    background-color: lemonchiffon;
+    width: 100px;
+    margin: 20px auto 0px auto;
+    padding: 5px;
+}
+

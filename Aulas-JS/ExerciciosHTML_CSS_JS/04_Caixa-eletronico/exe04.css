@@ -1,0 +1,101 @@
+/*estrutura caixa eletronico*/
+.estrutura{
+    background-color: rgb(153, 169, 185);
+    padding: 50px;
+    width: 350px;
+    margin: 0 auto;
+    border-radius: 12px 12px 0px 0px;
+}
+.estrutura h1{
+    text-align: center;
+    margin-top: -20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.base{
+    width: 450px;
+    background-color: rgb(144, 138, 138);
+    height: 250px;
+    margin: 0 auto;
+    border-radius: 0px 0px 12px 12px;
+}
+.base .boca{
+    background-color: rgb(90, 87, 87);
+    width: 200px;
+    height: 30px;
+    margin: 0 auto;
+    border-radius: 20px;
+    position: relative;
+    top: 70px;
+}
+.boca .tampa{
+    width: 200px;
+    height: 13px;
+    border-top: 1px solid rgb(207, 194, 194);
+    border-radius: 20px 20px 5px 5px;
+    margin: 0 auto;
+    background-image: linear-gradient(rgb(138, 134, 134), rgb(22, 19, 19));
+    position: absolute;
+    z-index: 2;
+    display: none;
+}
+.boca img{
+    width: 120px;
+    transform: rotate(90deg);
+    position: absolute;
+    left: 30px;
+    top: -3px;
+    display: none;
+}
+
+/*Fim estrutura caixa eletronico*/
+
+.tela{
+    background-color: rgb(171, 231, 171);
+    width: 300px;
+    max-height: 290px;
+    min-height: 290px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px 20px 10px 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: white solid 1px;
+    border-radius: 20px;
+}
+
+.tela input{
+    margin: 10px auto;
+    min-width: 200px ;
+    padding: 15px 20px;
+    color: lemonchiffon;
+    background-color: lightslategrey;
+    border: 3px solid gray;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.depositar{
+    display: none;
+}
+
+.sacar{
+    display: none;
+}
+
+.consultar-saldo{
+    display: none;
+}
+
+div .recibo{
+    background-color: rgb(179, 186, 194);
+    padding: 0px 5px;
+    border: 3px solid slategrey;
+    width: 270px;
+    margin-top: 0px;
+}
+div .recibo p{
+    text-align: left;
+    line-height: 10px;
+}

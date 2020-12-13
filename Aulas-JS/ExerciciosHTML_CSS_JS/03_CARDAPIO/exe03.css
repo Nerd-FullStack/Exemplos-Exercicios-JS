@@ -1,0 +1,50 @@
+body{
+    background-color: antiquewhite;
+    text-align: center;
+}
+.cardapio{
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 550px;
+    background-color: cadetblue;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 10px gray solid;
+    color: lightgray
+}
+.cardapio div{
+    text-align: left;
+    font-weight: bold;
+    padding: 0px 15px;
+}
+.pedidos input{
+    margin-left: 20px;
+    width: 40px;
+    background-color: cornsilk;
+    border: 1px black solid;
+}
+.pagamento-cartao input{
+    margin-bottom: 20px;
+
+}
+input[type=button]{
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: white;
+    background-color: green;
+    border: 1px solid rgb(6, 100, 6);
+    padding: 5px 10px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.nota-fiscal{
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 550px;
+    background-color: honeydew;
+    border: 5px gray solid;
+    text-align: left;
+    padding: 10px;
+}

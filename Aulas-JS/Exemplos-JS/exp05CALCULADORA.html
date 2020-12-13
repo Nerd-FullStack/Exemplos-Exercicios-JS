@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Calculadora</title>
+
+    <style>
+        div{
+            margin: 10px;
+        }
+        input{
+            border: 2px solid black;
+            width: 100px;
+        }
+        input[type=button]{
+            cursor: pointer;
+            font-style: oblique;
+            font-weight: bold;
+            width: 80px;
+            padding: 2px 5px;
+            background-color: cadetblue;
+            color: white;
+        }
+    
+    </style>
+
+</head>
+<body>
+
+
+    <h1>Some dois números</h1>
+    <input type="number" name="numero1" class="numero1"> +
+    <input type="number" name="numero2" class="numero2">
+    <input type="button" value="Somar" onclick="somar()">
+    <div class="resultado" >Resultado...</div>
+
+    <br> <br>
+  
+    <h1>Subtraia dois números</h1>
+    <input type="number" name="n1" class="n1"> -
+    <input type="number" name="n2" class="n2">
+    <input type="button" value="Subtrair" onclick="sub()">
+    <div class="resultadosub">Resultado...</div>
+
+    <br> <br>
+
+    <h1>Multiplique dois números</h1>
+    <input type="number" name="nmult1" class="nmult1"> *
+    <input type="number" name="nmult2" class="nmult2">
+    <input type="button" value="Multiplicar" onclick="mult()">
+    <div class="resultadomult">Resultado..</div>
+
+    <br> <br>
+
+    <h1>Divida dois números</h1>
+    <input type="number" name="ndiv1" class="ndiv1">
+    <input type="number" name="ndiv2" class="ndiv2">
+    <input type="button" value="Dividir" onclick="divisao()"> 
+    <div class="resultadodiv">Resultado...</div>
+
+    <script>
+        
+    function somar() {
+
+        let n1 = window.document.querySelector("input.numero1")
+        let n2 = window.document.querySelector("input.numero2")
+        let res = window.document.querySelector("div.resultado")
+
+        let num1 = Number(n1.value)
+        let num2 = Number(n2.value)
+
+        let soma = num1+num2
+
+        res.innerHTML = `A soma de ${num1} + ${num2} é: <b>${soma}</b>`
+
+    }
+
+    function sub(){
+        let n1 = window.document.querySelector("input.n1")
+        let n2 = window.document.querySelector("input.n2")
+        let res = window.document.querySelector("div.resultadosub")
+
+        let num1 = Number(n1.value)
+        let num2 = Number(n2.value)
+
+        let resul = num1 - num2
+
+        res.innerHTML = `A subtração de ${num1} - ${num2} é: <b>${resul}<b> `
+    }
+          
+    function mult(){
+            
+         let n1 = window.document.querySelector("input.nmult1")
+         let n2 = window.document.querySelector("input.nmult2")
+         let res = window.document.querySelector("div.resultadomult")
+
+         let num1 = Number(n1.value)
+         let num2 = Number(n2.value)
+
+         let resul = num1 * num2
+
+         res.innerHTML = `A multiplicação de ${num1} * ${num2} é: <b>${resul}<b>`
+        }
+
+    function divisao(){
+        let n1 = window.document.querySelector("input.ndiv1")
+        let n2 = window.document.querySelector("input.ndiv2")
+        let res = window.document.querySelector("div.resultadodiv")
+
+        let num1 = Number(n1.value)
+        let num2 = Number(n2.value)
+
+        let resul = num1 / num2
+
+        res.innerHTML = `A divisão de ${num1} / ${num2} é: <b>${resul}<b>`
+    }    
+
+    </script>
+
+</body>
+</html>

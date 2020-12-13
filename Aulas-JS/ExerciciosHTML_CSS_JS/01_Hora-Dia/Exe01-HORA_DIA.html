@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Hora do dia</title>
+
+    <style>
+        body{
+            background-color: rgb(53, 94, 170);
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+            
+        }
+
+        section{
+            background-color: rgb(233, 227, 227);
+            width: 50%;
+            min-width: 600px;
+            margin: 0 auto;
+            color: black;
+            border-radius: 20px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.513);
+        }
+        h2{
+            padding-top: 50px;
+            margin-bottom: 50px;
+        }
+        div img{
+            border-radius: 200px;
+            margin-bottom: 50px;
+            width: 350px;
+        }
+        footer{
+            margin-top: 20px;
+            font-size: 25px;
+            font-style: italic;
+           
+        }
+    </style>
+</head>
+<body">
+
+    <h1>HORA DO DIA</h1>
+
+    <section>
+        <h2 class="hora">Hora atual</h2>
+        <div> 
+            <img id="img" src="/img/dia.jpg" alt="foto do dia"> 
+        </div>
+
+    </section>
+
+    <footer>@NerdFullStack</footer>
+
+
+    <script>
+        
+
+        let fundo = document.body
+        let horario = document.querySelector("h2.hora")
+        let img = window.document.getElementById('img')
+
+        let tempo = new Date()
+        let hora = tempo.getHours()
+        let min = tempo.getMinutes()
+    
+        if(hora >= 18){
+            fundo.style.backgroundColor = "#73561c"
+            horario.innerHTML = `Boa noite, agora são ${hora}:${min}`
+            img.src = "/img/noite.jpg"
+         }else if(hora >= 12){
+            fundo.style.backgroundColor = "#c99120"
+            horario.innerHTML = `Boa tarde, agora são ${hora}:${min}`
+            img.src = "/img/tarde.jpg"
+         }else{
+             fundo.style.backgroundColor = "#fac355"
+             horario.innerHTML = `Bom dia, agora são ${hora}:${min}`
+             img.src = "/img/dia.jpg"
+         }
+
+
+        
+    </script>
+    
+</body>
+</html>

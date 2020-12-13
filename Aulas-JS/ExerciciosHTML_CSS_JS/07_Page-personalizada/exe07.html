@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="palavras,chave">
+    <meta name="description" content="descriçao do meu site">
+    <meta name="author" content="Mr.Alizão">
+    <link rel="stylesheet" href="exe07.css">
+    <title>Landing Page personalizada</title>
+</head>
+<body>
+    <header class="head">
+        <h2 class="logo">@NerdFullStack</h2>
+        <nav>
+            <a href="">Home</a>
+            <a href="">Contato</a>
+            <a href="">Sobre</a>
+            <p class="adm" onclick="modoadm()">Modo-ADM</p>
+        </nav>
+    </header>
+
+    <section class="fundo-imagem">
+        <h1 class="titulo">A vida das marmotas</h1>
+
+        <p class="texto">
+            A marmota é um roedor mamífero da família
+            Sciuridae, parente próxima, portanto, dos esquilos.
+            São esquilos grandes e roliços.
+            Vivem em grupos de, em média, 12 indivíduos, 
+            nas regiões montanhosas do hemisfério norte, na Europa e na Ásia, 
+            em locais de clima rigoroso onde a vegetação é reduzida a algumas ervas. 
+            As marmotas são encontradas em maior número na região dos Alpes.
+        </p>
+    </section>
+
+    <div class="senha-adm">
+        <h2>Senha</h2>
+        <input type="password" class="senha">
+        <input type="button" class="confirmar" value="Confirmar" onclick="confirmar()">
+    </div>
+
+    <div class="painel">
+        <h3 style="margin-top: 10px;">Bem-vindo ao modo ADM</h3>
+        <div class="escolha-cor"><br>
+            <p>Cor do cabeçalho</p><br>
+
+            <div class="cor" onclick="cor1()"> </div>
+            <div class="cor" onclick="cor2()"> </div>
+            <div class="cor" onclick="cor3()"> </div>
+        </div>
+        
+        <div class="imagem">
+            <p>Imagem de fundo</p>
+
+            <div class="marmota1" onclick="img1()"> </div>
+            <div class="marmota2" onclick="img2()"> </div>
+            <div class="marmota3" onclick="img3()">
+                <audio src="/audio/grito-marmota.mp3" controls class="grito">  </audio> 
+            </div>
+        
+        </div>
+
+        <div class="cor-texto">
+            <div class="cor-titulo">
+                <h4>Cor do título</h4>
+                <div class="cor-h1" onclick="cortitulo1()"> </div>
+                <div class="cor-h2" onclick="cortitulo2()"> </div>
+                <div class="cor-h3" onclick="cortitulo3()"> </div>
+            </div>
+
+            <div class="cor-txt">
+                <h4>Cor do texto</h4>
+                <div class="cor-txt1" onclick="cortxt1()"> </div>
+                <div class="cor-txt2" onclick="cortxt2()"> </div>
+                <div class="cor-txt3" onclick="cortxt3()"> </div>
+            </div>
+            
+        </div>
+
+        <p class="sair" onclick="sair()">Sair</p>
+    </div>
+
+    
+
+    <script src="exe07.js"></script>
+</body>
+</html>
