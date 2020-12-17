@@ -1,0 +1,48 @@
+body{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+.section1{
+    background-color: crimson;
+    width: 500px;
+    margin: 0 auto;
+    color: white;
+    padding: 30px;
+    border-radius: 25px;
+}
+input[type=button]{
+    padding: 5px;
+    background-color: darkcyan;
+    border-radius: 10px;
+    border: 0px;
+    cursor: pointer;
+    box-shadow: black 2px 2px 6px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+p{
+    display: none;
+}
+
+img{
+    width: 200px;
+    max-height: 80px;
+    margin: 10px auto;
+}
+.notas1 img{
+    display: flex;
+}
+.notas1, .notas2{
+    width: 210px;
+    display: inline-block;
+    margin: 0 50px;
+}
+.notas2 img{
+    display: flex;
+}
+.moeda{
+    width: auto;
+    height: auto;
+}
